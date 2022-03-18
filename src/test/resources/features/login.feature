@@ -6,5 +6,5 @@ Feature: Inicio de sesion
 
   Scenario: Inicio de sesion exitoso
     Given el esta en la pantalla de inicio de sesion
-    When el ingresa el usuario "" y el password ""
+    When el ingresa el usuario "standard_user" y el password "secret_sauce"
     Then el deberia poder ingresar a la aplicacion
