@@ -6,10 +6,10 @@ import org.junit.runner.RunWith;
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(
-        features = "src/test/resources/features/login.feature",
+        features = "src/test/resources/features/compras.feature",
         glue = "com.indra.steps_definitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@Prueba"
+        tags = "@Test1"
 )
-public class Login {
+public class Comprar {
 }

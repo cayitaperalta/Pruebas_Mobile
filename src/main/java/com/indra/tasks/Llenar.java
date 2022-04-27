@@ -24,10 +24,9 @@ public class Llenar implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Enter.theValue(usuario).into(LoginUI.USERNAME.waitingForNoMoreThan(Duration.ofSeconds(15))),
-                Enter.theValue(password).into(LoginUI.PASSWORD),
-                Click.on("siguiente"),
-                Enter.theValue("dad").into("otp")
+                Enter.theValue(usuario).into(LoginUI.USERNAME.waitingForNoMoreThan(Duration.ofSeconds(30))),
+                Enter.theValue(password).into(LoginUI.PASSWORD)
+
         );
     }
 
