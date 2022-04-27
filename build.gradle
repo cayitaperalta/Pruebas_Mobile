@@ -1,7 +1,9 @@
 defaultTasks 'clean', 'test', 'aggregate'
 
 repositories {
+    mavenLocal()
     mavenCentral()
+
 }
 
 buildscript {
@@ -54,7 +56,7 @@ dependencies {
 
 test {
     testLogging.showStandardStreams = true
-    systemProperties System.getProperties()
+   // systemProperties System.getProperties()
 }
 
 gradle.startParameter.continueOnFailure = true

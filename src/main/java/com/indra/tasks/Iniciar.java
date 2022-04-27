@@ -3,6 +3,7 @@ package com.indra.tasks;
 import com.indra.user_interfaces.LoginUI;
 import net.serenitybdd.screenplay.Performable;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 public class Iniciar {
@@ -12,5 +13,9 @@ public class Iniciar {
                 Llenar.elFormularioDeLogin(usuario, password),
                 Click.on(LoginUI.LOGIN)
                 );
+    }
+
+    public static SesionConUsuarioGenerico sesionConUsuarioGenerico(){
+        return Tasks.instrumented(SesionConUsuarioGenerico.class);
     }
 }
